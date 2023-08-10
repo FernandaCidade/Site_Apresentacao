@@ -5,92 +5,75 @@
 }
 
 :root{
-    --roxoEscuro: #390039;
-    --branco: #E3F6F5; 
-    --roxoClaro:#820081;
+    --verdeEscuro:#005f6b;
+    --branco: #d8e9ea; 
+    --preto: #000;
+    --cinzaClaro:#4d585a;
+    --cinza:#686969;
 
-    --font1:'roboto', sans-serif; 
+    --font1:'Roboto', sans-serif;
 }
+/* Configurando o header */
 
-/* Colocando cor e alinhamento da imagem no header */
-header{
-    background-color: var(--roxoEscuro);
-    height: 150px;
-    margin: auto;
+nav{
+
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;        
-}
+    justify-content: space-evenly;
 
-/* Configurando a imagem */
-div img{
-    height: 100px;
-    width: 100px;
-    border: 3px solid var(--branco);
-    border-radius: 50%;
-    margin-top: 150px;
 }
-
-nav p{
-    text-align: center;
-    font-family: var(--font1);
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* configurando o h1 */
-h1{
-    position: absolute;
-    left: -999em;
-    width: 1em;
-}
-
-/* Configurando o body */
-body{
-    background-color: var(--branco);
-}
-
-/* Configurando os botões */
-section{
-    margin-top: 150px;
-    padding: 0% auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    flex-direction: column;      
-    box-shadow: 20px 20x 10px black;
-}
-.botao{
-    background-color: var(--roxoClaro)  ;
-    border: 3px solid black;
-    height: 60px;
-    width: 150px;
-    margin-top: 25px;
-    padding: 0 auto;
-    border-radius: 50px;  
-    text-align: center;  
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: -2px 5px 5px black;
-}
-
-.botao a{
+.contato a{
     text-decoration: none;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
-    color: black;
+    color: var(--cinzaClaro);
+    font-size: large;
 }
 
-/* Configurando projetos */
-
-.img_projeto{
-    display: grid;
-    justify-content: space-around;
+.botao{
+    display: flex; 
+    justify-content: center;
+    align-items: end;
+    margin-top: -20px;
     
 }
 
-.img_projeto a{
+.botao a{
+    margin-right: 15px;
     text-decoration: none;
-    color: black;
+    color: var(--cinzaClaro);
+}
+
+
+/* Configurando a imagem */
+
+.img_fotoPerfil img{
+    height: 500px;
+    width: 500px;
+ 
+}
+
+body{
+    background-color: #fff;
+    color: var(--preto);
+    font-family: var(--font1);
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    
+}
+.textoIntro{
+    margin-top: 150px;
+}
+h1{
+    font-family: var(--font1); 
+    font-size: 100px;
+    text-transform: uppercase;
+    color: var(--cinzaClaro);
+    
+}
+
+.textoIntro p{
+    font-size: 25px;
 }
