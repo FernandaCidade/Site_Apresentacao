@@ -13,6 +13,10 @@
 
     --font1:'Roboto', sans-serif;
 }
+
+body{
+    overflow: hidden;
+}
 /* Configurando o header */
 
 nav{
