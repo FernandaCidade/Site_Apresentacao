@@ -77,3 +77,31 @@ h1{
 .textoIntro p{
     font-size: 25px;
 }
+
+/* Página Projetos */
+
+h3{
+    text-align: center;
+}
+
+.copiladoProjeto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+   
+}
+
+.img_projeto{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+.img_projeto img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+.vsConnect{
+    background-color: purple;
+}
