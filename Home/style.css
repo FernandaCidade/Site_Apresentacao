@@ -14,9 +14,6 @@
     --font1:'Roboto', sans-serif;
 }
 
-body{
-    overflow: hidden;
-}
 /* Configurando o header */
 
 nav{
@@ -49,6 +46,14 @@ nav{
 
 /* Configurando a imagem */
 
+.esquerda{
+    display: flex;
+    justify-content: left;
+
+}
+
+
+
 .img_fotoPerfil img{
     height: 500px;
     width: 500px;
@@ -56,12 +61,14 @@ nav{
 }
 
 body{
+    margin-top: 15px;
     background-color: #fff;
     color: var(--preto);
     font-family: var(--font1);
 }
 
-section{
+ 
+.esquerda{
     display: flex;
     justify-content: space-evenly;
     margin-top: 150px;
@@ -108,4 +115,39 @@ h3{
 }
 .vsConnect{
     background-color: purple;
+}
+
+@media screen and (max-width: 600px) {
+    
+  
+    .img_fotoPerfil img{   
+        margin-top: 85%; 
+        /* margin-right: 6%;
+        align-items: center; */
+        height: 150px;
+        width: 150px;
+        
+    } 
+
+    
+    .textoIntro h1{ 
+        
+        /* align-items: center; */
+        font-size: 30px;  
+    }
+    .textoIntro p{
+      
+      font-size: 15px;  
+        
+    }
+    .contato a,
+    .botao a{
+        font-size: 15px;  
+
+    }
+    .esquerda{
+        margin-top: 0px;
+    
+    }
+
 }
